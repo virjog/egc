@@ -168,8 +168,9 @@ button:hover {
   height: 710px;
 }
 
-.blue {
-  background-color: #4183D7;
+.slide1 {
+  /* background-color: #4183D7; */
+  background: url(http://i.imgur.com/n6OjeUD.png);
 }
 
 .purple {
