@@ -64,49 +64,45 @@ button:hover {
   height: 500px;
 }
 
-.main-header {
-  position: relative;
-  width: 100%;
-  left: 0;
-  right: 0;
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 95%;
+}
+
+.shadow {
   height: 90px;
-  padding: 0px 0px 0px 0px;  
+  padding: 10px 0px 0px 0px; 
   background: rgba(255,255,255,0.95);
   border-bottom: 1px solid #D0CECD;
   -webkit-box-shadow: 0px 1px 0px 0px rgba(83,69,64,0.16),0px 1px 2px 0px rgba(0,0,0,0.1);
           box-shadow: 0px 1px 0px 0px rgba(83,69,64,0.16),0px 1px 2px 0px rgba(0,0,0,0.1);
-}
 
-.rulogo {
-  display: inline-block;
-  position: relative;
-  width: 140px;
-  top: -24px;
-  left: 10px;
-}
-
-.nav-logo {
-  display: inline-block;
-  width: 50%;
-  height: 70px;
-  margin-top: 22px;
 }
 
 .logo {
   display: inline-block;
   position: relative;
-  width: 70px;
-  margin-top: -13px;
-  margin-left: 70px;
+  top: -5px;
 }
 
-.title {
-  display: inline-block;
-  position: relative;
-  top: -12px;
-  left: -135px;
-  color: #D21034; /* RUTGERS COLOR: #F5001B */
-  font-size: 21px;
+#navigation {
+  float: right;
+  margin-top: 30px;
+}
+
+#navigation a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #D21034;
+  top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#navigation a:hover {
+  border-bottom: 3px solid #D21034;
 }
 
 /* NAVBAR */
@@ -149,6 +145,7 @@ button:hover {
 }
 
 .hero.home {
+  width: 100%;
   height: 710px;
 }
 
@@ -164,13 +161,25 @@ button:hover {
 }
 
 .box {
-  width: 1440px;
-  height: 710px;
+  width: 100%;
+}
+
+.hero-home img {
+  display: block;
+  width: 100%;
 }
 
 .slide1 {
+  background: url(http://i.imgur.com/WSeCwdg.png);
+}
+
+.slide2 {
   /* background-color: #4183D7; */
-  background: url(http://i.imgur.com/n6OjeUD.png);
+  background: url(http://i.imgur.com/cpEVNoN.png);
+}
+
+.slide3 {
+  background: url(http://i.imgur.com/kdfv3sy.png);
 }
 
 .purple {
@@ -183,7 +192,11 @@ button:hover {
 
 /* MEMBERS */
 .member-container {
-  padding: 15px 0px 5px 15px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 400px;
 }
 
 .members h1 {
@@ -279,10 +292,20 @@ button:hover {
 .society-name {
   font-weight: bold;
   font-size: 14px;
+  margin-top: 260px;
 }
 
+.societies.card h3{
+  line-height: 20px;
+}
 .rep-name {
   font-weight: lighter;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.adjust {
+  top: 20px;
 }
 
 /* CALENDAR */
@@ -363,12 +386,18 @@ button:hover {
   padding: 20px 40px;
 }
 
-.segment-container h2{
+.segment-container h2 {
   color: #FFF;
+}
+
+.segment-container h3{
+  color: #FFF;
+  margin-bottom: 0px;
 }
 
 .segment-container p{
   color: #FFF;
+  margin-top: 0px;
 }
 
 /* UPCOMING EVENTS */
@@ -388,24 +417,24 @@ button:hover {
 
 /* ABOUT */
 .about-text {
-  padding-top: 35px;
-  padding-left: 100px;
-  padding-right: 100px;
-  width: 850px;
+  padding-top: 30px;
+  width: 90%;
+  max-width: 880px;
   margin: 0 auto;
 }
 
 #egcgroup {
   display: block;
-  width: 60%;
+  width: 100%;
+  max-width: 1000px;
   margin: auto auto;
 }
 
 #duties {
   display: block;
-  width: 850px;
-  margin: 10px auto;
-  left: 20px;
+  width: 90%;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 #duties li {
@@ -443,4 +472,77 @@ button:hover {
 .legal {
   margin-left: 35px;
   color: #acacab;
+}
+
+/* MEDIA QUERIES */
+/* iPhone 6 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+  .member-container {
+    padding: 15px 0px 5px 15px;
+  }
+
+  .members h1 {
+    text-align: center;
+  }
+  .members h1, h2{
+    text-transform: uppercase;
+  }
+
+  .grid {
+    margin-top: 0px;
+  }
+
+  .row {
+
+  }
+
+  .row h2 {
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+  .row a {
+    font-weight: lighter;
+  }
+
+  .card {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    margin: 0 0px 0px 0;
+    position: relative;
+    background: url("http://i.imgur.com/3t0U2z4.png") 0 0 no-repeat; /* http://www.celebrityendorsementads.com/celebrity-endorsements/celebrities/scarlett-johansson/images/scarlett-johansson.jpg */
+    background-size: 100% 100% !important;
+    text-align: center;
+  }
+
+  .card h3 {
+    line-height: 10px;
+    color: black;
+  }
+
+  /* SOCIETIES */
+  .society-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 160px;
+    margin-bottom: 10px;
+  }
+
+  .societies.card h3{
+    line-height: 20px;
+  }
+  .rep-name {
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+  }
+
+  .adjust {
+    top: 60px;
+    bottom: 60px;
+  }
 }
