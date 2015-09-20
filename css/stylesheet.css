@@ -1,0 +1,548 @@
+body {
+  font-family: 'proxima-nova', Arial, tahoma, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  display: block;
+  bottom: 0;
+  top: 0;
+}
+
+a {
+  color: #D21034;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navlinks a:hover {
+  border-bottom: 3px solid #D21034;
+}
+
+h3 {
+  color: #FFF;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: #FFF;
+  margin: 0 0 0.3em;
+  padding: 0 15px;
+  height: 38px;
+  min-width: 60px;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0;
+  margin-top: 40px;
+  -webkit-box-shadow: inset 0 -4px 0 -2px rgba(0, 0, 0, 0.1), 0 3px 0 -1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -4px 0 -2px rgba(0, 0, 0, 0.1), 0 3px 0 -1px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #999;
+}
+
+.goog {
+  width: 500px;
+  height: 500px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 95%;
+}
+
+.shadow {
+  height: 90px;
+  padding: 10px 0px 0px 0px; 
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #D0CECD;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(83,69,64,0.16),0px 1px 2px 0px rgba(0,0,0,0.1);
+          box-shadow: 0px 1px 0px 0px rgba(83,69,64,0.16),0px 1px 2px 0px rgba(0,0,0,0.1);
+
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+
+#navigation {
+  float: right;
+  margin-top: 30px;
+}
+
+#navigation a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #D21034;
+  top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#navigation a:hover {
+  border-bottom: 3px solid #D21034;
+}
+
+/* NAVBAR */
+.navbar {
+  display: inline-block;
+  width: 50%;
+  float: right;
+  position: relative;
+  padding-top: 35px;
+  left: 0px;
+}
+
+.navlinks li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.navlinks {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  text-align: center;
+  left: 40px;
+}
+
+.navlinks a {
+  display: block;
+  position: relative;  
+  text-transform: uppercase;
+  line-height: -38px;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.hero.home {
+  width: 100%;
+  height: 710px;
+}
+
+.heroheading {
+  display: inline-block;
+  position: fixed;
+  color: #FFF; /* #D21034 */
+  font-size: 48px;
+  width: 600px;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  margin-top: -320px;
+  margin-left: 70px;
+}
+
+.box {
+  width: 100%;
+}
+
+.hero-home img {
+  display: block;
+  width: 100%;
+}
+
+.slide1 {
+  background: url(http://i.imgur.com/WSeCwdg.png);
+}
+
+.slide2 {
+  /* background-color: #4183D7; */
+  background: url(http://i.imgur.com/cpEVNoN.png);
+}
+
+.slide3 {
+  background: url(http://i.imgur.com/kdfv3sy.png);
+}
+
+.purple {
+  background-color: #674172; 
+}
+
+.orange {
+  background-color: #E46F10;
+}
+
+/* MEMBERS */
+.member-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 400px;
+}
+
+.members h1 {
+  text-align: center;
+}
+.members h1, h2{
+  text-transform: uppercase;
+}
+
+.grid {
+  margin-top: 0px;
+}
+
+.row {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.row h2 {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.row a {
+  font-weight: lighter;
+}
+
+.card {
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  margin: 0 0px 0px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  background: url("http://i.imgur.com/3t0U2z4.png") 0 0 no-repeat; /* http://www.celebrityendorsementads.com/celebrity-endorsements/celebrities/scarlett-johansson/images/scarlett-johansson.jpg */
+  background-size: 100% 100% !important;
+  text-align: center;
+}
+
+.card h3 {
+  line-height: 10px;
+  color: black;
+}
+
+.overlay {
+  height: 250px;
+  width: 250px;
+}
+
+.overlay:hover {
+  background-image: url(http://i.imgur.com/nLOWQeO.png);
+  line-height: 250px;
+  -webkit-transition: background 0.2s ease-in-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+
+.text-content {
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  color: white;
+  transition: opacity 500ms;
+  position: relative;
+  top: 50%;
+  transform: translateY(-10%);
+  line-height: 25px;
+  vertical-align: bottom;
+}
+
+.text-content:hover {
+  opacity: 1;
+}
+
+.text-content p {
+  margin: 0px 20px;
+}
+
+.member-name {
+  font-weight: bold;
+}
+
+.member-title {
+  font-weight: lighter;
+}
+
+/* SOCIETIES */
+.society-name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 260px;
+}
+
+.societies.card h3{
+  line-height: 20px;
+}
+.rep-name {
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.adjust {
+  top: 20px;
+}
+
+/* CALENDAR */
+.calendar {
+  
+}
+
+/* RESOURCES */
+.resource-name {
+  font-size: 14px;
+  line-height: 520px !important;
+}
+
+.resource-container {
+  padding: 15px 0px 5px 15px;
+}
+
+.resources h1 {
+  text-align: center;
+}
+.resources h1, h2{
+  text-transform: uppercase;
+}
+
+.group.minutes.card {
+  background: url("http://i.imgur.com/H3CD4aX.png") !important;
+}
+
+#ru_soe {
+  background-image: url(http://i.imgur.com/pVSihCX.png);
+  -webkit-background-size: 250px 250px;
+       -o-background-size: 250px 250px;
+          background-size: 250px 250px;
+  /*-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);*/
+}
+
+#rusa {
+  background-image: url(http://i.imgur.com/oq4LUJb.png);
+  -webkit-background-size: 250px 250px;
+       -o-background-size: 250px 250px;
+          background-size: 250px 250px;
+}
+
+#engorg {
+  background-image: url(http://i.imgur.com/pVSihCX.png);
+  -webkit-background-size: 250px 250px;
+       -o-background-size: 250px 250px;
+          background-size: 250px 250px;
+}
+
+#res {
+  background-image: url(http://i.imgur.com/uim7L85.png);
+  -webkit-background-size: 250px 250px;
+       -o-background-size: 250px 250px;
+          background-size: 250px 250px;
+}
+
+.segment {
+  position: relative;
+  width: 50%;
+  height: 420px;
+  top: -31px;
+}
+
+.left {
+  float: left;
+  background-color: #C0392B;
+}
+
+.right {
+  float: right;
+  background-color: #3A539B;
+}
+
+.segment-container {
+  padding: 20px 40px;
+}
+
+.segment-container h2 {
+  color: #FFF;
+}
+
+.segment-container h3{
+  color: #FFF;
+  margin-bottom: 0px;
+}
+
+.segment-container p{
+  color: #FFF;
+  margin-top: 0px;
+}
+
+/* UPCOMING EVENTS */
+.segment-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.event-title {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.cal-button {
+  margin-top: 70px;
+}
+
+/* ABOUT */
+.about-text {
+  padding-top: 30px;
+  width: 90%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+#egcgroup {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto auto;
+}
+
+#duties {
+  display: block;
+  width: 90%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+#duties li {
+  list-style-type: disc;
+}
+
+/* FOOTER */
+.footer-container {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-left: -15px;
+}
+
+.footer {
+  float: left; 
+  text-align: center; 
+  width: 100%;
+}
+
+.footerlinks {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 0;
+}
+
+.footerlinks li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.legal {
+  margin-left: 35px;
+  color: #acacab;
+}
+
+/* MEDIA QUERIES */
+/* iPhone 6 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+  .member-container {
+    padding: 15px 0px 5px 15px;
+  }
+
+  .members h1 {
+    text-align: center;
+  }
+  .members h1, h2{
+    text-transform: uppercase;
+  }
+
+  .grid {
+    margin-top: 0px;
+  }
+
+  .row {
+
+  }
+
+  .row h2 {
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+  .row a {
+    font-weight: lighter;
+  }
+
+  .card {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    margin: 0 0px 0px 0;
+    position: relative;
+    background: url("http://i.imgur.com/3t0U2z4.png") 0 0 no-repeat; /* http://www.celebrityendorsementads.com/celebrity-endorsements/celebrities/scarlett-johansson/images/scarlett-johansson.jpg */
+    background-size: 100% 100% !important;
+    text-align: center;
+  }
+
+  .card h3 {
+    line-height: 10px;
+    color: black;
+  }
+
+  /* SOCIETIES */
+  .society-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 160px;
+    margin-bottom: 10px;
+  }
+
+  .societies.card h3{
+    line-height: 20px;
+  }
+  .rep-name {
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+  }
+
+  .adjust {
+    top: 60px;
+    bottom: 60px;
+  }
+}
