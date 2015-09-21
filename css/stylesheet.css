@@ -1,5 +1,11 @@
+@font-face {  
+  font-family: Brandon Grotesque;  
+  font-weight: bold;
+  src: url('../fonts/Brandon_bld.otf');
+}
+
 body {
-  font-family: 'proxima-nova', Arial, tahoma, sans-serif;
+  font-family: 'Franklin Gothic Book', Brandon Grotesque, Arial, tahoma, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -13,12 +19,24 @@ p {
 
 a {
   color: #D21034;
-  font-weight: bold;
   text-decoration: none;
 }
 
 .navlinks a:hover {
-  border-bottom: 3px solid #D21034;
+  border-bottom: 3px solid #FFF;
+}
+
+.active {
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 5px;
+}
+
+
+h1 {
+  display: inline-block;
+  font-family: Brandon Grotesque;
+  text-transform: uppercase;
+  color: #FFF;
 }
 
 h3 {
@@ -70,14 +88,43 @@ button:hover {
   width: 95%;
 }
 
-.shadow {
-  height: 90px;
-  padding: 10px 0px 0px 0px; 
-  background: rgba(255,255,255,0.95);
-  border-bottom: 1px solid #D0CECD;
-  -webkit-box-shadow: 0px 1px 0px 0px rgba(83,69,64,0.16),0px 1px 2px 0px rgba(0,0,0,0.1);
-          box-shadow: 0px 1px 0px 0px rgba(83,69,64,0.16),0px 1px 2px 0px rgba(0,0,0,0.1);
+.header {
+  padding: 2.5%;
+  background: #C42D46;
+  height: 35em;
+}
 
+.subheader {
+  padding: 2.5%;
+  background: #C42D46;
+  height: 10em;
+}
+
+.headline {
+  text-align: center;
+  font-size: 72px;
+  padding-top: 1.75em;
+  line-height: 1.25em;
+  margin: auto 40px;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 48px;
+  padding-top: 0.65em;
+  line-height: 1.00em;
+  margin: auto 9em;
+}
+
+#for {
+  display: inline-block;
+  font-family: 'TisaPro';
+  font-style: italic;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -93,16 +140,15 @@ button:hover {
 
 #navigation a{
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #D21034;
+  color: #FFF;
   top: 10px;
   margin-right: 15px;
   margin-left: 15px;
 }
 
 #navigation a:hover {
-  border-bottom: 3px solid #D21034;
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 5px;
 }
 
 /* NAVBAR */
@@ -443,35 +489,46 @@ button:hover {
 
 /* FOOTER */
 .footer-container {
+  display: inline-block;
   width: 100%;
-  position: relative;
+  background: #242424;
+  margin: 0 auto;
   bottom: 0;
   left: 0;
-  margin-left: -15px;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  text-align: center;
+}
+
+.footer-container img {
+  float: left;
+  margin-top: 1.5em;
+  margin-left: 9.35em;
+  margin-right: 7em;
 }
 
 .footer {
-  float: left; 
-  text-align: center; 
-  width: 100%;
-}
-
-.footerlinks {
-  display: inline-block;
-  position: relative;
+  display: inline;
   margin: 0 auto;
-  text-align: center;
-  bottom: 0;
 }
 
-.footerlinks li {
-  display: inline-block;
-  margin: 0 6px;
+div#col1, div#col2, div#col3, div#col4 {
+  float: left;
+  width: auto;
+  padding-right: 7em;
 }
 
-.legal {
-  margin-left: 35px;
-  color: #acacab;
+.footer-category {
+  color: #D21034;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.footer-links li {
+  color: #FFF;
+  text-align: left;
+  margin-left: -40px;
 }
 
 /* MEDIA QUERIES */
